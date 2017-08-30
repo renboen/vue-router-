@@ -31,7 +31,7 @@ module.exports = {
     proxyTable: {
       // https://apigatewayqa.sgmlink.com:3223/service
       '/service': {//端口3233下的第一个路径
-        target: 'https://apigatewayqa.sgmlink.com:3223',
+        target: 'https://apigatewayqa.sgmlink.com:13101',
         // secure: false, // 接受 运行在 https 上的服务
         changeOrigin: true,
         pathRewrite:{

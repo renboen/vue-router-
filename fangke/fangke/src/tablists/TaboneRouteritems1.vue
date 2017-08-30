@@ -1,13 +1,31 @@
 <template>
   <div>
-   <h1>我是Tabone的三级路由的第一个</h1>
+   <h1>{{tex}}</h1>
+    <p @click="send">点我进行子组件向父组件发送消息</p>
   </div>
 
 </template>
 
 <script>
-  export default({
-  })
+  export default{
+      data(){
+          return{
+              xt:""
+          }
+      },
+    props:{
+      tex:{
+          type:String
+      }
+    },
+
+    methods:{
+      send(){
+          this.$emit('giveFather','通信成功')
+      }
+    }
+
+  }
 
 
 </script>

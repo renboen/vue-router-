@@ -1,16 +1,12 @@
 <template>
   <div>
-   <h1>我是Tabone的三级路由的第二个</h1>
+   <h1>我是Tabtwo的三级路由的第二个</h1>
   </div>
 
 </template>
 
 <script>
   export default({
-    mounted(){
-      console.log(this.$route.params)
-
-    },
   })
 
 

@@ -28,6 +28,7 @@ export default new Router({
 
         {
           path: "Tabone/:id",
+          name:"Tabone",
           component: Tabone,
 
         },
